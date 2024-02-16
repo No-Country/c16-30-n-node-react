@@ -37,6 +37,11 @@ app.use(function(req, res, next){
   next(createError(404))
 })
 
+//puerto (se puede especificar otro desde .env)
+const port = process.env.PORT || 3000;
+app.listen(port, function(){
+  console.log(`Backend conectado al puerto ${port}`)
+})
 
 //error handler
 app.use(function(err, req, res, next){
