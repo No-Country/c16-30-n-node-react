@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie": "^0.6.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express-session": "^1.18.0",
+    "http-error": "^0.0.6",
+    "http-errors": "^2.0.0",
+    "method-override": "^3.0.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.9.1",
+    "nodemon": "^3.0.3",
+    "parser": "^0.1.4",
+    "passport": "^0.7.0",
+    "path": "^0.12.7"
+  }
+}
