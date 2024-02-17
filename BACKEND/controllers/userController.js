@@ -3,20 +3,21 @@
 
 
 const userController = {
-  'login': function(req, res){
+  'login': function (req, res) {
     // logica
 
   },
-  'createUser': function(req, res){
-  
-  },
-  'getFavs': function(req, res){
+  'createUser': function (req, res) {
 
   },
-  'updateUser': function(req, res){
+  'getFavs': function (req, res) {
+    res.send("pelele")
 
   },
-  'deleteUser': function(req, res){
+  'updateUser': function (req, res) {
+
+  },
+  'deleteUser': function (req, res) {
 
   }
 }
