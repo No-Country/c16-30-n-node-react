@@ -5,11 +5,22 @@ const cookieParser = require('cookie-parser')
 const morgan = require('morgan')
 const session = require('express-session')
 const methodoverride = require('method-override')
-
+const mysql2 = require('mysql2')
+require('dotenv').config()
 
 // conectar BD
+const dbConfig = require('./connection.js')
 
+const connectDB = () => {
+  try {
+    mysql2.createConnection(dbConfig)
+    console.log(`Conexión exitosa a base de datos. Puerto ${dbConfig.port}`)
+  } catch (err) {
+    console.log(err)
+  }
+}
 
+connectDB()
 
 
 // rutas
